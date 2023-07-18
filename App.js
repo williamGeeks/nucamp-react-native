@@ -5,7 +5,7 @@ import { store } from './redux/store';
 
 export default function App() {
     return (
-        <Provider store={store} >
+        <Provider store={store}>
             <NavigationContainer>
                 <Main />
             </NavigationContainer>
