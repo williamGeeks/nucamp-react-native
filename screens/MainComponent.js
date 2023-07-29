@@ -233,10 +233,10 @@ const Main = () => {
     const dispatch = useDispatch();
 
     const showNetInfo = async () => {
-        let connectionInfo = await NetInfo.fetch();
+        const connectionInfo = await NetInfo.fetch();
         Platform.OS === "ios"
             ? Alert.alert(
-                  "Initial Network Connectivity Type:",
+                  "Initial Network Connectivity Type: ",
                   connectionInfo.type
               )
             : ToastAndroid.show(
